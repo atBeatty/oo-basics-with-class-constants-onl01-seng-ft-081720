@@ -6,7 +6,7 @@ class Shoe
 
     def initialize(brand)
       @brand = brand
-      if !BRANDS.includes?(self.brand)
+      if !BRANDS.include?(self.brand)
         BRANDS << brand
       end
 
@@ -17,5 +17,5 @@ class Shoe
       puts "Your shoe is as good as new!"
     end
 
-  
+
 end
